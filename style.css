@@ -1,18 +1,22 @@
-img{
-    height: 150px;
-}
-.description{
+.header {
+    background-color: CornflowerBlue;
+    text-align: center;
+  }
+  
+  .about-me {
     font-size: 20px;
-}
-#cook-time{
+    opacity: 0.5;
+  }
+  
+  .title {
     font-weight: bold;
-}
-p{
-    color: rgb(233, 71, 219);
-}
-.external-link{
-    color: SeaGreen;
-}
-h1, h2, p, li{
-    font-family: Helvetica;
-}
+  }
+  
+  h1 {
+    color: Azure;
+  }
+  
+  body {
+    font-family: Georgia;
+    background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+  }
