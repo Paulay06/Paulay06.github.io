@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #054c5e83;
+            transition: background-color 0.3s, color 0.3s;
         }
         header {
             background: #2f3744;
@@ -28,17 +29,39 @@
             color: #000303;
             padding: 10px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         nav a {
             color: #020142;
             margin: 0 15px;
             text-decoration: none;
         }
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .dark-mode nav {
+            background: #333;
+            color: #fff;
+        }
+        .dark-mode nav a {
+            color: #bbbbbb;
+        }
+        .dark-mode header {
+            background: #1e272e;
+            color: #ffffff;
+        }
+        .dark-mode .section {
+            background: #444;
+        }
         .section {
             background: #669eb6;
             padding: 20px;
             margin: 20px 0;
             border-radius: 8px;
+            transition: background-color 0.3s;
         }
         h2 {
             color: #ddd3da;
@@ -50,6 +73,7 @@
             padding: 10px 0;
             bottom: 0;
             width: 100%;
+            transition: background-color 0.3s, color 0.3s;
         }
         footer a {
             color: #ebebeb;
@@ -61,6 +85,55 @@
         }
         .social-icons {
             font-size: 24px;
+        }
+        .dark-mode footer {
+            background: #282828;
+            color: #ffffff;
+        }
+        /* Toggle Switch */
+        .dark-mode-switch {
+            margin-left: 20px;
+        }
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+        .toggle input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: 0.4s;
+        }
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+        .slider.round:before {
+            border-radius: 50%;
         }
     </style>
     <!-- Include Font Awesome for social media icons -->
@@ -76,6 +149,13 @@
         <a href="#favorites">Favorites</a>
         <a href="#projects">School Projects</a>
         <a href="#talents">Talents</a>
+        <!-- Dark mode switch -->
+        <div class="dark-mode-switch">
+            <label class="toggle">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
     </nav>
 
     <div class="container">
@@ -112,8 +192,20 @@
         <div class="social-icons">
             <a href="https://www.facebook.com/paula.honrada06?mibextid=LQQJ4d" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.instagram.com/honradapaula?igsh=ZWN1amJya3R1dXhn" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        
         </div>
     </footer>
+
+    <script>
+        const toggleSwitch = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        toggleSwitch.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+        });
+    </script>
 </body>
 </html>
