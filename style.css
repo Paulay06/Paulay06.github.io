@@ -1,144 +1,183 @@
-.frame {
-    width: 200px;
-    height: 200px;
-    border: 8px solid #89CFF0;
-    border-radius: 20px;
-    background-color: #fff; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    box-shadow: 0 0 20px rgba(137, 207, 240, 0.5), 0 0 30px rgba(137, 207, 240, 0.7); 
-    overflow: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease; 
-}
-
-.frame:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 30px rgba(137, 207, 240, 0.7), 0 0 40px rgba(137, 207, 240, 0.9); 
-}
-
-.frame img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 15px; 
-}
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* RESET */
+* {
     margin: 0;
     padding: 0;
-    background-color: #054c5e83;
-    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
 }
 
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* CONTAINER */
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
+/* HEADER / NAVBAR */
 header {
-    background: #2f3744;
-    color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    z-index: 1000;
+    color: white;
 }
 
 nav {
-    background: #c0c2cc;
-    color: #000303;
-    padding: 10px;
-    text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 nav a {
-    color: #020142;
+    color: white;
     margin: 0 15px;
     text-decoration: none;
+    font-size: 14px;
 }
 
+/* HERO SECTION */
+.hero {
+    display: flex;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+/* LEFT SIDE IMAGE */
+.hero-left {
+    flex: 1;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RIGHT SIDE CONTENT */
+.hero-right {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* TITLE */
+.hero-right h1 {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* DESCRIPTION */
+.hero-right p {
+    font-size: 14px;
+    color: #cccccc;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: white;
+    color: black;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* SECTIONS (FOR OTHER PAGES) */
 .section {
-    background: #669eb6; 
+    background: #669eb6;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
-    transition: background-color 0.3s, box-shadow 0.3s; 
-    box-shadow: 0 0 20px rgba(135, 206, 250, 0.5); 
+    box-shadow: 0 0 20px rgba(135, 206, 250, 0.5);
 }
 
 .section:hover {
-    box-shadow: 0 0 30px rgba(135, 206, 250, 0.7); 
+    box-shadow: 0 0 30px rgba(135, 206, 250, 0.7);
 }
 
+/* FRAME IMAGE BOX */
 .frame {
     width: 200px;
     height: 200px;
-    border: 8px solid #89CFF0; 
+    border: 8px solid #89CFF0;
     border-radius: 20px;
-    background-color: #fff; 
+    background-color: #fff;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    box-shadow: 0 0 20px rgba(137, 207, 240, 0.5), 0 0 30px rgba(137, 207, 240, 0.7); 
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(137, 207, 240, 0.5),
+                0 0 30px rgba(137, 207, 240, 0.7);
     overflow: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .frame:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 30px rgba(137, 207, 240, 0.7), 0 0 40px rgba(137, 207, 240, 0.9); 
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(137, 207, 240, 0.7),
+                0 0 40px rgba(137, 207, 240, 0.9);
 }
 
 .frame img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 15px; 
+    border-radius: 15px;
 }
 
+/* FOOTER */
 footer {
     background: #c48fa7;
-    color: #000000;
+    color: #000;
     text-align: center;
-    padding:  10px 0;
+    padding: 10px 0;
 }
 
-
-
-
+/* DARK MODE TOGGLE */
 .dark-mode-switch {
     margin-left: 20px;
 }
-
 
 .dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
 
-.dark-mode nav {
-    background: #333;
-    color: #fff;
-}
-
-.dark-mode .section {
-    background: #444;
-}
-
-.dark-mode footer {
-    background: #282828;
-    color: #ffffff;
-}
-
-
+/* TOGGLE SWITCH */
 .toggle {
     position: relative;
     display: inline-block;
@@ -153,10 +192,7 @@ footer {
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background-color: #ccc;
     transition: 0.4s;
 }
@@ -188,62 +224,22 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-
-@media (max-width: 600px) {
-    .container {
-        width: 95%;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
     }
-    
-    .frame {
-        width: 150px;
-        height: 150px;
+
+    .hero-right {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .hero-right h1 {
+        font-size: 40px;
     }
 
     nav a {
         margin: 0 10px;
-    }
-
-    .section {
-        padding: 15px;
-    }
-}
-
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .container {
-        width: 90%;
-    }
-
-    .frame {
-        width: 180px;
-        height: 180px;
-    }
-
-    nav a {
-        margin: 0 12px;
-    }
-
-    .section {
-        padding: 18px;
-    }
-}
-
-
-@media (min-width: 901px) {
-    .container {
-        width: 80%;
-    }
-
-    .frame {
-        width: 200px;
-        height: 200px;
-    }
-
-    nav a {
-        margin: 0 15px;
-    }
-
-    .section {
-        padding: 20px;
     }
 }
