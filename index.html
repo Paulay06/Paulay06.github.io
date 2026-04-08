@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paula Honrada | Portfolio</title>
+    <title>My Professional Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,116 +11,122 @@
 
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <h2>Paula Honrada</h2>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<!-- LANDING PAGE -->
+<header>
+    <img src="me.jpg" alt="My Photo" style="width:150px; border-radius:50%;">
+    <h1> Portfolio by Paula Honrada</h1>
+    <p>Executive Virtual Assistant</p>
 </header>
 
-<!-- HERO / LANDING -->
-<section class="hero">
-    <div class="left">
-        <img src="me.jpg" alt="Paula">
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+
+    <div class="dark-mode-switch">
+        <label class="toggle">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+        </label>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!-- ABOUT ME -->
+    <div id="about" class="section">
+        <h2>About Me</h2>
+
+        <p><strong>Background:</strong><br>
+        I am a hardworking and responsible person who always does my best in everything I do. As the only daughter in my family, I learned early how to be strong, independent, and reliable. I manage responsibilities at home while focusing on my studies, which helped me become organized and disciplined.</p>
+
+        <p><strong>Educational Background:</strong><br>
+        I am currently studying INFORMATION TECHNOLOGY MAJOR IN HEALTH. I have learned important skills like time management, communication, and using basic digital tools.</p>
+
+        <p><strong>Mission & Vision:</strong><br>
+        My mission is to provide reliable and quality support to clients. I want to help them save time and make their work easier. My vision is to become a trusted Virtual Assistant.</p>
+
+        <p><strong>Goals & Motivation:</strong><br>
+        I am motivated by my family and my desire to succeed. My goal is to grow my skills, gain experience, and build a stable career.</p>
+
+        <p><strong>Key Achievements:</strong><br>
+        I consistently complete my school tasks on time and stay organized even under pressure. I am proud of balancing my responsibilities at home and school.</p>
     </div>
 
-    <div class="right">
-        <h1>My <br><span>Portfolio</span></h1>
-        <h3>Executive Virtual Assistant</h3>
-        <p>I am a dedicated and reliable Virtual Assistant focused on helping clients stay organized and productive.</p>
+    <!-- SKILLS -->
+    <div id="skills" class="section">
+        <h2>Core Skills & Services</h2>
 
-        <div class="buttons">
-            <a href="#contact" class="btn-primary">Hire Me</a>
-            <a href="resume.pdf" class="btn-secondary" download>Download CV</a>
-        </div>
+        <p><strong>Technical Skills:</strong><br>
+        Data Entry, Online Research, Email Management, Calendar Management</p>
+
+        <p><strong>Software Proficiency:</strong><br>
+        Google Docs, Microsoft Word, Excel, Canva</p>
+
+        <p><strong>Soft Skills:</strong><br>
+        Communication, Time Management, Attention to Detail, Responsibility</p>
+
+        <p><strong>Services:</strong><br>
+        Social Media Support, Admin Tasks, Project Organization</p>
     </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>About Me</h2>
+    <!-- EXPERIENCE -->
+    <div id="experience" class="section">
+        <h2>Experience & Projects</h2>
 
-    <div class="card">
-        <p><strong>Background:</strong> I am a hardworking and responsible person who always does my best. As the only daughter, I became independent and disciplined.</p>
-
-        <p><strong>Educational Background:</strong> I am currently studying Information Technology major in Health.</p>
-
-        <p><strong>Mission & Vision:</strong> My mission is to provide reliable and quality support to clients.</p>
-
-        <p><strong>Goals & Motivation:</strong> I am motivated by my family and my desire to succeed.</p>
-
-        <p><strong>Key Achievements:</strong> I consistently complete tasks on time and stay organized.</p>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section dark">
-    <h2>Core Skills & Services</h2>
-
-    <div class="grid">
-        <div class="card">
-            <h3>Technical</h3>
-            <p>Data Entry, Email Management, Online Research</p>
-        </div>
-
-        <div class="card">
-            <h3>Software</h3>
-            <p>Google Docs, Excel, Canva</p>
-        </div>
-
-        <div class="card">
-            <h3>Soft Skills</h3>
-            <p>Communication, Time Management, Responsibility</p>
-        </div>
-
-        <div class="card">
-            <h3>Services</h3>
-            <p>Admin Support, Social Media, Project Organization</p>
-        </div>
-    </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-    <h2>Experience & Projects</h2>
-
-    <div class="card">
         <h3>Work Experience</h3>
-        <p>Student Work / Personal Experience – managing schedules, tasks, and projects.</p>
+        <p>
+        Student Work / Personal Experience<br>
+        - Organized school tasks and deadlines<br>
+        - Managed schedules and responsibilities<br>
+        - Assisted in group projects
+        </p>
 
         <h3>Projects</h3>
         <ul>
-            <li>Travel Itinerary Planning</li>
-            <li>Social Media Content Calendar</li>
-            <li>Data Entry Spreadsheet</li>
+            <li>
+                <strong>Travel Itinerary</strong><br>
+                Created a detailed travel plan with schedule and budget.
+            </li>
+            <li>
+                <strong>Social Media Content Calendar</strong><br>
+                Designed a 30-day content plan for a sample business.
+            </li>
+            <li>
+                <strong>Data Entry Spreadsheet</strong><br>
+                Organized and formatted data using Excel.
+            </li>
         </ul>
     </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact" class="section dark">
-    <h2>Contact Me</h2>
+    <!-- CONTACT -->
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
 
-    <div class="card">
         <p>Email: honradapaula3@gmail.com</p>
-        <p>GitHub: github.com/Paulay06</p>
+        <p>LinkedIn: lhttps://github.com/Paulay06/Paulay06.github.io/tree/maininkedin.com/in/yourname</p>
 
-        <a href="resume.pdf" class="btn-primary" download>Download Resume</a>
+        <a href="resume.pdf" download class="button">Download Resume</a>
     </div>
-</section>
+
+</div>
 
 <!-- FOOTER -->
 <footer>
-    <p>Follow me</p>
+    <p>Connect with me:</p>
     <div class="social-icons">
-        <a href="https://www.facebook.com/paula.honrada06"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/honradapaula"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/paula.honrada06?mibextid=LQQJ4d" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/honradapaula" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
